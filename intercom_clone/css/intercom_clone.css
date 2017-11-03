@@ -7,7 +7,7 @@
 }
 
 #intercom_box_wrapper {
-    position: absolute;
+    position: fixed;
     right: 15px;
     bottom: 100px;
     height: 70%;
@@ -115,7 +115,7 @@ input[type="submit"] {
 }
 
 button {
-    position: absolute;
+    position: fixed;
     right: 15px;
     bottom: 15px;
     background-color: #1F8CEB;
