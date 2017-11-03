@@ -1,8 +1,5 @@
 <?php
 
-echo "false";
-exit();
-
 if(isset($_POST['email_data'])){
 
      // check if e-mail is empty
