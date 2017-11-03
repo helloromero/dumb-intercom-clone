@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#intercom_box_wrapper {
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+    height: 70%;
+    max-height: 550px;
+    min-height: 340px;
+    width: 370px;
+    background: white;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.44);
+}
+
+#intercom_box_top {
+    height: 80px;
+    background: #1F8CEB;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 18px;
+    -webkit-box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 4px 9px -4px rgba(0, 0, 0, 0.44);
+}
+
+#intercom_box_top img {
+    height: 40px;
+    width: 40px;
+    float: left;
+    border-radius: 100%;
+}
+
+#intercom_box_top h1 {
+    font-family: 'Abel', sans-serif;
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    float: left;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+#intercom_box_top span {
+    font-family: 'Abel', sans-serif;
+    float: left;
+    font-size: 13px;
+}
+
+.my_chat_widget {
+    padding: 20px;
+}
+
+.my_chat_widget p {
+    background: #f4f7f9;
+    margin-left: 50px;
+    float: left;
+    padding: 16px;
+    border-radius: 10px;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+}
+
+.my_chat_widget img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    float: left;
+    position: absolute;
+    display: block;
+    margin-left: -70px;
+    margin-top: -32px;
+}
+
+input#email_address {
+    font-family: 'Abel', sans-serif;
+    width: 84%;
+    float: right;
+    height: 35px;
+    border-style: solid;
+    outline: none;
+    border: 1px solid #e2e5e6;
+    padding: 10px;
+    margin-left: 35px;
+    margin-top: -35px;
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="submit"] {
+    font-family: 'Abel', sans-serif;
+    height: 35px;
+    border: none;
+    background: #1F8CEB;
+    color: white;
+    float: right;
+    position: relative;
+    z-index: 2;
+    border-radius: 0;
+    outline: none;
+}
+
+button {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background-color: #1F8CEB;
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+@keyframes slide {
+    0% {
+        right: -200px;
+        bottom: 15px;
+    }
+    100% {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+#away_icon {
+    width: 9px;
+    height: 9px;
+    background: #fff100;
+    display: inline-block;
+    border-radius: 100%;
+    margin-right: 4px;
+}
+
+button i.fa.fa-times,
+button i.fa.fa-comments {
+    color: white;
+    font-size: 25px;
+}
+
+button img {
+    padding-top: 5px;
+}
+
+#client_input {
+    position: absolute;
+    bottom: 0;
+    z-index: 9999999;
+    left: 0;
+    width: 100%;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    cursor: not-allowed;
+}
+
+@media (max-width: 400px) {
+    #intercom_box_wrapper {
+        width: 100%;
+        right: 0;
+        border-radius: 0;
+    }
+
+    #intercom_box_top {
+        border-radius: 0;
+    }
+}
